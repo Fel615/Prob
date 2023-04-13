@@ -1,0 +1,585 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+head,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  background-image: url("https://thumb.photo-ac.com/7d/7d64f47339efa1e86bbdfd6a4a116b44_t.jpeg");
+  background-size: cover;
+  line-height: 1;
+
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 1;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+
+/* 調整用スタイル */
+
+a {
+  text-decoration: none;
+}
+
+
+ul,
+li {
+  list-style: none;
+  padding-bottom: 25px; 
+}
+
+
+/* メイン */
+
+main {
+  background-color: #f1f1f1;
+  background-image: url("https://thumb.photo-ac.com/7d/7d64f47339efa1e86bbdfd6a4a116b44_t.jpeg");
+  background-size: cover;
+  height:  1200px;
+  padding: 0 0 1000px;
+  /*display: flex;*/
+  /*display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;*/
+  
+}
+
+
+
+.main {
+  margin: auto;
+}
+
+
+.topimage{
+  width: 100%;
+  height: 300px; background: url("/images/slideshow/3.jpg");
+  background-size: cover;
+  background-position: 50% 10%;
+}
+
+
+/* ヘッダー */
+
+
+.header {
+  background: linear-gradient(to left, rgb(3, 153, 3), rgb(171, 245, 121));
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+
+@media screen and (min-width: 960px) {
+  .header {
+    height: 80px;
+  }
+}
+
+
+.header__inner {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+  position: relative;
+}
+
+
+/* ヘッダーのロゴ部分 */
+.header__title {
+  width: 80px;
+}
+
+
+.header__title:hover {
+  opacity: 0.8;
+}
+
+
+@media screen and (min-width: 960px) {
+  .header__title {
+    width: 140px;
+  }
+}
+
+.header__title img {
+  display: block;
+  width: 50%;
+  height: 50%;
+}
+
+/* ヘッダーのナビ部分 */
+
+.header__nav {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(100%);
+  background-color: #fff;
+  transition: ease .4s;
+  display: flex;
+}
+
+
+@media screen and (min-width: 960px) {
+  .header__nav {
+    position: static;
+    transform: initial;
+    background-color: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: end;
+    width: 40%;
+  }
+}
+
+
+.nav__items {
+  margin: auto;
+}
+
+@media screen and (min-width: 960px) {
+  .nav__items {
+    margin: initial;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: initial;
+    justify-content: space-between;
+  }
+}
+
+
+.nav-items__item {
+  cursor: pointer;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+@media screen and (min-width: 960px) {
+
+  .nav-items__item:before {
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: orange;
+    opacity: 0;
+
+  }
+
+  .nav-items__item:hover:before {
+    opacity: 1;
+  }
+}
+
+
+
+/* ナビのリンク */
+.nav-items__item a {
+  color: black;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.nav-items__item:last-child a {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 960px) {
+  .nav-items__item a {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+}
+
+
+/* メニュー */
+.header__info {
+  width: 48px;
+  height: 100%;
+}
+
+.info {
+  background-color: transparent;
+  border-color: transparent;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 960px) {
+  .info {
+    display: none;
+  }
+}
+
+
+/* イタリアンメニューの線 */
+.info span {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(247, 8, 8);
+  position: relative;
+  transition: ease .4s;
+  display: block;
+}
+
+.info span:nth-child(1) {
+  top: 0;
+}
+
+.info span:nth-child(2) {
+  margin: 10px 0;
+}
+
+
+.info span:nth-child(3) {
+  top: 0;
+}
+
+
+/* メニュークリック後のスタイル */
+.header__nav.active {
+  transform: translateX(0);
+}
+
+.info.active span:nth-child(1) {
+  top: 8px;
+  transform: rotate(45deg);
+}
+
+
+.info.active span:nth-child(2) {
+  opacity: 0;
+}
+
+
+.info.active span:nth-child(3) {
+  top: -14px;
+  transform: rotate(-50deg);
+}
+
+/* フッター */
+.footer {
+  display: flex;
+  background: linear-gradient(to right, rgb(3, 153, 3), rgb(171, 245, 121));
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+
+.footer div {
+  margin: auto;
+  font-style: italic;
+}
+
+
+
+
+
+/* ボタン全体
+.flowbtn11{
+  font-family:'Verdana',sans-serif;	
+  border-radius:4px;
+  position:relative;
+  display:inline-block;
+  width:90%;
+  font-size:20px;
+  color:#fff!important;
+  text-decoration:none;
+  margin-bottom:5px;
+  }
+  /* Twitter */
+  .fl_tw1{
+  background:#55acee;
+  }
+  /* Instagramアイコン位置 */
+  .insta_btn11 .fa-instagram{
+  position:relative;
+  z-index:1;	
+  }
+  /* Instagram紫グラデ背景色 */
+  .insta_btn11{
+  background:-webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background:linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  overflow:hidden;
+  }
+  /* Instagramオレンジグラデ背景色 */
+  .insta_btn11:before{
+  content: '';
+  position:absolute;
+  top:17px;
+  left:-75px;
+  width:100%;
+  height:100%;
+  background:-webkit-radial-gradient(#ffdb2c 5%, rgba(255, 105, 34, 0.65) 45%, rgba(255, 88, 96, 0) 80%);
+  background:radial-gradient(#ffdb2c 5%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 80%);
+  }
+  /* Facebook */
+  .fl_fb1{
+  background:#3b5998;
+  }
+  /* Feedly */
+  .fl_fd1{
+  background:#6cc655;
+  }
+  /* Pocket */
+  .fl_pk1{
+  background:#ef3f56;
+  }
+  /* はてブ */
+  .fl_hb1{
+  background:#1ba5dc;
+  }
+  /* YouTube */
+  .fl_yu1{
+  background:#fc0d1c;
+  }
+  /* LINE */
+  .fl_li1{
+  background:#00c300;
+  }
+  /* お問い合わせメール */
+  .fl_ma1{
+  background:#f3981d;
+  }
+  /* プロフィール */
+  .fl_pf11{
+  background:#555;
+  }
+  /* アイコンボタンホバー時 */
+  .flowbtn11:hover span{
+  -webkit-transform: rotateX(360deg);
+  -ms-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+  text-decoration:none;
+  }
+  /* ボタン内テキスト調整 */
+  .flowbtn11 span{
+  font-size:14px;	
+  position:relative;
+  left:8px;
+  bottom:2px;
+  transition:.6s;	
+  display:inline-block;	
+  }
+  /* ulタグの内側余白を０にする */
+  ul.snsbtniti2{
+  padding:0!important;
+  position:relative;
+  top:4500px;
+  }
+  ul.snsbtniti3{
+    padding:0!important;
+    }
+  /* アイコンボタンの位置調整 */
+  .snsbtniti2{
+  display:flex;
+  max-width: 400px;
+  margin: auto;
+  flex-flow:row wrap;
+  }
+  /* アイコンボタン同士の余白調整 */
+  .snsbtniti2 li{
+  flex:0 0 48%;
+  /*text-align:center!important;*/
+  text-align:center;
+  }
+  /* アイコンボタンの位置調整 */
+  .snsbtniti3{
+    display:flex;
+    margin: auto;
+    flex-flow:row wrap;
+    }
+    /* アイコンボタン同士の余白調整 */
+    .snsbtniti3 li{
+    flex:0 0 48%;
+    /*text-align:center!important;*/
+    text-align:center;
+    } */
+  .tematable{
+    border: 2px #808080 solid;
+    /* margin: auto; */
+    width: 12.5%;
+    vertical-align: middle;
+    background-color: #ffffff;
+  }

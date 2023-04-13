@@ -1,0 +1,29 @@
+ .alc-items {
+    text-align: center;
+    
+
+} 
+
+.alc__menu {
+    padding-top: 10%;
+    padding-bottom: 10px;
+    font-size: 150%;
+}
+
+.alc__menu__wisky {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 200%;
+}
+
+.alc__menu__teuqila {
+ padding: 5px 0;
+ font-size: 200%   
+}
+
+.alc-items__item {
+    padding-bottom: 5%;
+}
+
+
+
